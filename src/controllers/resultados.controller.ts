@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 
-class RespuestasController {
+class ResultadosController {
   constructor() {}
 
   consultar(req: Request, res: Response) {
@@ -56,4 +56,4 @@ class RespuestasController {
     }
   }
 }
-export default new RespuestasController();
+export default new ResultadosController();
