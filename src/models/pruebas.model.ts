@@ -1,9 +1,9 @@
-import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm"
+import { BaseEntity, Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm"
 import { Resultado } from "./resultados.model";
 import { Pregunta } from "./preguntas..model";
 
 @Entity('Prueba')
-export class Prueba {
+export class Prueba extends BaseEntity {
     @PrimaryGeneratedColumn()
     ID:string;
 
@@ -11,7 +11,7 @@ export class Prueba {
     Nombre:string;
 
     @Column()
-    anio:Date;
+    Anio:Date;
 
     @OneToMany(()=>Resultado,(resultado)=>resultado.IDPrueba)
     resultados:Resultado[];

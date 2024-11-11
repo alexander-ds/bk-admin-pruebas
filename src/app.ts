@@ -8,7 +8,7 @@ import pruebasRoutes from "./routes/pruebas.routes";
 import resultadosRoutes from "./routes/resultados.routes";
 
 const app = express();
-
+app.use(express.json());
 app.use(cors());
 app.use(morgan("dev"));
 
@@ -19,6 +19,6 @@ app.get("/", (req: Request, res: Response) => {
 app.use("/estudiantes", estudiantesRoutes);
 app.use("/pruebas", pruebasRoutes);
 app.use("/preguntas", preguntasRoutes);
-app.use("/respuestas", resultadosRoutes);
+app.use("/resultados", resultadosRoutes);
 
 export default app;

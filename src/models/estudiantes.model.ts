@@ -1,8 +1,8 @@
-import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm"
+import { BaseEntity, Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm"
 import { Resultado } from "./resultados.model";
 
 @Entity('Estudiante')
-export class Estudiante {
+export class Estudiante extends BaseEntity {
     @PrimaryGeneratedColumn()
     ID:string;
 

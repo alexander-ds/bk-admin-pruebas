@@ -9,9 +9,9 @@ async function main() {
   puerto = puerto || 3000;
   try {
     await AppDataSource.initialize();
-    console.log("BBDD conectada");
+    console.log("--------------\nBBDD conectada\n--------------");
     app.listen(puerto, () => {
-      console.log("Server run in port: " + puerto);
+      console.log("******************\nServer run in port\n==>    " + puerto+"    <==\n******************");
     });
   } catch (e) {
     if (e instanceof Error) {
