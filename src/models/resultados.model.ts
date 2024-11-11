@@ -1,4 +1,4 @@
-import { Column, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from "typeorm"
+import { Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from "typeorm"
 import { Estudiante } from './estudiantes.model';
 import { Prueba } from "./pruebas.model";
 import { Pregunta } from './preguntas..model';
