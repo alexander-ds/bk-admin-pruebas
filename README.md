@@ -1,5 +1,5 @@
-# bk-prueba-ceinfes
-Parte back de la prueba de CEINFES para la vacante de desarrollador
+# bk-admin-pruebas
+Parte back del ejercicio de pruebas 
 
 # Pre-requisitos
 
@@ -13,7 +13,7 @@ Parte back de la prueba de CEINFES para la vacante de desarrollador
 
 - Se clona el repositorio
 ```
-git clone https://github.com/alexander-ds/bk-prueba-ceinfes.git
+git clone https://github.com/alexander-ds/bk-admin-pruebas.git
 ```
 - Accedemos a la ruta en la que clonamos el repositorio
 - Despues de abrir el repositorio en el editor elegido en la consola escribimos 
